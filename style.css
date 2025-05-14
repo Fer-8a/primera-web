@@ -1,9 +1,64 @@
 body{
 
-    background-color: rgb(118, 245, 245);      
+    background-color: rgb(233, 233, 233);      
     font-family: 'Courier New', Courier, monospace
 }
 
 h1{
-    color: black; 
+    color: rgb(230, 32, 32); 
     text-align: center;    }
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h1{ 
+    animation: fade 2s ease-in-out;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slide {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+body {
+    animation : slide 1s ease-in-out;
+    font-size: 20px;
+}
+h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+}
+@keyframes slide {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+a:hover {
+    animation: slide 1s ease-in-out;
+    font-size: 30px;
+}
+@keyframes color-change {
+    0% {
+    color: rgb(0, 0, 2);
+    }
+  
+    50% {
+    color: rgb(13, 188, 231);
+    }
+  
+    100% {
+    color: rgb(9, 255, 0);
+    }
+}
+
+h2:hover {
+    animation: color-change 3s infinite;
+}
+a:visited {
+    color: purple;
+}
+
+
